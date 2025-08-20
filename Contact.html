@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Feedback | Virginia Racing Commission</title>
+    
+    <!-- Google Fonts: Montserrat & Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" type="text/css" href="vrc-new.css">
+    
+</head>
+<body>
+
+    <header class="main-header" role="banner">
+        <script src="https://www.developer.virginia.gov/media/developer/resources/branding-bar/brandingbar.php" data-item="va_aabrandingbar" aaname="Virginia Racing Commission" aatheme="aatheme-black" defer ></script>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="https://files.constantcontact.com/c3be764f901/1d50fd80-b920-46ac-a8be-16f16dd1d743.jpg" alt="Virginia Racing Commission Logo">
+                <!-- <span class="md:flex-none" >Virginia Racing Commission</span> -->
+                <span>Virginia Racing Commission</span>
+            </a>
+
+        <nav>
+            <div>
+                
+                <!-- Desktop Navigation -->
+                <div id="desktop-menu">
+                    <a href="About Us.html" class="nav-link">About</a>
+                    <a href="Publicmeetings.html" class="nav-link">Meetings</a>
+                    <a href="Regulations.html" class="nav-link">Regulations</a>
+                    <a href="Licensing.html" class="nav-link">Licensing</a>
+                    <a href="Contact.html" class="nav-link">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+            <div class="accessibility-tools">
+                <!-- <button id="contrast-toggle" title="Toggle High Contrast Mode" aria-label="Toggle High Contrast Mode"><i class="fa-solid fa-circle-half-stroke"></i>&nbsp;&nbsp;</button>
+                <button id="text-to-speech" title="Read Page Aloud" aria-label="Read Page Aloud"><i class="fa-solid fa-volume-high"></i>&nbsp;&nbsp;</button>
+                <button id="font-increase" title="Increase Font Size" aria-label="Increase Font Size"><i class="fa-solid fa-font"></i>+&nbsp;</button>
+                <button id="font-decrease" title="Decrease Font Size" aria-label="Decrease Font Size"><i class="fa-solid fa-font"></i>-&nbsp;</button> -->
+                <!-- Mobile Menu Button -->
+                <!-- <button style="visibility: hidden;" id="contrast-toggle" title="Toggle High Contrast Mode" aria-label="Toggle High Contrast Mode"><i class="fa-solid fa-circle-half-stroke"></i>&nbsp;&nbsp;</button> -->
+                <button id="mobile-menu-button">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" style="display: none;">
+            <a href="About Us.html">About</a>
+            <a href="Publicmeetings.html">Meetings</a>
+            <a href="Regulations.html">Regulations</a>
+            <a href="Licensing.html">Licensing</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+
+    </header>
+
+    <main role="main">
+
+        <section class="page-hero" aria-labelledby="page-title">
+            <div class="container">
+                <h1 id="page-title">Contact & Feedback</h1>
+            </div>
+        </section>
+
+        <section id="directory" aria-labelledby="directory-heading">
+            <div class="container">
+                <h2 id="directory-heading">Contact Directory</h2>
+                <div class="directory-grid">
+                    <div class="directory-division">
+                        <h3>Licensing & Permits</h3>
+                        <div class="contact-person">
+                            <strong>Kimberly Mackey</strong>
+                            <span class="title">Director of Operations</span>
+                            <a href="mailto:kimberly.mackey@vrc.virginia.gov">Email</a>
+                        </div>
+                    </div>
+                    <div class="directory-division">
+                        <h3>Compliance & Audits</h3>
+                        <div class="contact-person">
+                            <strong>Eris Jones</strong>
+                            <span class="title">Director of Audit and Compliance</span>
+                            <a href="mailto:eris.jones@vrc.virginia.gov">Email</a>
+                        </div>
+                    </div>
+                    <div class="directory-division">
+                        <h3>Investigations</h3>
+                        <div class="contact-person">
+                            <strong>Israel Saavedra</strong>
+                            <span class="title">Director of Investigations</span>
+                            <a href="mailto:israel.saavedra@vrc.virginia.gov">Email</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="inquiry" aria-labelledby="inquiry-heading" style="background-color: #f9f9f9;">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="form-column">
+                        <h2 id="inquiry-heading" style="text-align: left;">General Inquiry</h2>
+                        <form action="#" method="POST">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="location-column">
+                        <div class="location-info">
+                            <h4>Office Location</h4>
+                            <p>
+                                5707 Huntsman Rd, Suite 201<br>
+                                Sandston, VA 23150
+                            </p>
+                            <div class="map-placeholder" role="img" aria-label="Map showing office location">Map Placeholder</div>
+                            <h4>Hours</h4>
+                            <p>Monday - Friday<br>8:15 AM - 5:00 PM</p>
+                            <h4>Phone</h4>
+                            <p><a href="tel:8049667400">(804) 966-7400</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="anonymous-feedback" aria-labelledby="anonymous-heading">
+            <div class="container">
+                <div class="anonymous-form">
+                    <h2 id="anonymous-heading">Anonymous Feedback</h2>
+                    <p>Submit anonymous feedback, concerns, or whistleblower reports. This form does not collect any personal or identifying information.</p>
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="concern-type">Type of Concern</label>
+                            <select id="concern-type" name="concern-type">
+                                <option>General Feedback</option>
+                                <option>Integrity Concern</option>
+                                <option>Safety Concern</option>
+                                <option>Whistleblower Report</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="concern-details">Detailed Description</label>
+                            <textarea id="concern-details" name="concern-details" placeholder="Please provide as much detail as possible, including dates, times, locations, and individuals involved."></textarea>
+                        </div>
+                        <div style="text-align: center;">
+                            <button type="submit" class="btn-primary">Submit Anonymously</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>Virginia Racing Commission</h4>
+                    <p style="color: #555;">10700 Horsemens Road<br>
+                    New Kent, VA 23124<br>
+                    Phone: (804) 966-7400</p>
+                </div>
+                <nav aria-label="Footer Quick Links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="Racing and Events.html">Race Calendar</a></li>
+                        <li><a href="Licensing.html">Licensing</a></li>
+                        <li><a href="Regulations.html">Regulations</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                        <li><a href="Web Policy.html">Web Policy</a></li>
+                    </ul>
+                </nav>
+                <nav aria-label="Footer About Links">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="About Us.html">Our Mission</a></li>
+                        <li><a href="About Us.html#governance">Commissioners</a></li>
+                        <li><a href="Publicmeetings.html">Public Meetings</a></li>
+                        <li><a href="Careers.html">Careers</a></li>
+                    </ul>
+                </nav>
+                <nav aria-label="Footer Social Media Links">
+                    <h4>Connect</h4>
+                     <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Commonwealth of Virginia | Virginia Racing Commission. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script src="vrc.js"></script>
+
+</body>
+</html>
