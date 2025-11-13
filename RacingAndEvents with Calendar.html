@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Racing & Events | Virginia Racing Commission</title>
+    
+    <!-- Google Fonts: Montserrat & Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" type="text/css" href="vrc-new.css">
+    
+</head>
+<body>
+
+    <header class="main-header" role="banner">
+        <script src="https://www.developer.virginia.gov/media/developer/resources/branding-bar/brandingbar.php" data-item="va_aabrandingbar" aaname="Virginia Racing Commission" aatheme="aatheme-black" defer ></script>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="https://files.constantcontact.com/c3be764f901/1d50fd80-b920-46ac-a8be-16f16dd1d743.jpg" alt="Virginia Racing Commission Logo">
+                <!-- <span class="md:flex-none" >Virginia Racing Commission</span> -->
+                <span>Virginia Racing Commission</span>
+            </a>
+
+        <nav>
+            <div>
+                
+                <!-- Desktop Navigation -->
+                <div id="desktop-menu">
+                    <a href="AboutUs.html" class="nav-link">Our Mission & Vision</a>
+                    <a href="Publicmeetings.html" class="nav-link">Public Meetings & Transparency</a>
+                    <a href="Regulations.html" class="nav-link">Regulations & Compliance</a>
+                    <a href="Licensing.html" class="nav-link">Licensing & Permits</a>
+                    <a href="Contact.html" class="nav-link">Contact & Feedback</a>
+                </div>
+            </div>
+        </nav>
+
+            <div class="accessibility-tools">
+                <!-- <button id="contrast-toggle" title="Toggle High Contrast Mode" aria-label="Toggle High Contrast Mode"><i class="fa-solid fa-circle-half-stroke"></i>&nbsp;&nbsp;</button>
+                <button id="text-to-speech" title="Read Page Aloud" aria-label="Read Page Aloud"><i class="fa-solid fa-volume-high"></i>&nbsp;&nbsp;</button>
+                <button id="font-increase" title="Increase Font Size" aria-label="Increase Font Size"><i class="fa-solid fa-font"></i>+&nbsp;</button>
+                <button id="font-decrease" title="Decrease Font Size" aria-label="Decrease Font Size"><i class="fa-solid fa-font"></i>-&nbsp;</button> -->
+                <!-- Mobile Menu Button -->
+                <!-- <button style="visibility: hidden;" id="contrast-toggle" title="Toggle High Contrast Mode" aria-label="Toggle High Contrast Mode"><i class="fa-solid fa-circle-half-stroke"></i>&nbsp;&nbsp;</button> -->
+                <button id="mobile-menu-button">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" style="display: none;">
+            <a href="AboutUs.html">Our Mission & Vision</a>
+            <a href="Publicmeetings.html">Public Meetings & Transparency</a>
+            <a href="Regulations.html">Regulations & Compliance</a>
+            <a href="Licensing.html">Licensing & Permits</a>
+            <a href="Contact.html">Contact & Feedback</a>
+        </div>
+
+    </header>
+
+    <main role="main">
+
+        <section id="calendar" aria-labelledby="calendar-heading">
+            <div class="container">
+                <h2 id="calendar-heading">Race Calendar</h2>
+                <form class="calendar-filters" aria-label="Filter race calendar">
+                    <div class="filter-group">
+                        <label for="filter-track">Track</label>
+                        <select id="filter-track" name="track">
+                            <option value="all">All Tracks</option>
+                            <option value="colonial">Colonial Downs</option>
+                            <option value="shenandoah">Shenandoah Downs</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="filter-date">Date</label>
+                        <input type="date" id="filter-date" name="date">
+                    </div>
+                    <div class="filter-group">
+                        <label for="filter-breed">Breed</label>
+                        <select id="filter-breed" name="breed">
+                            <option value="all">All Breeds</option>
+                            <option value="thoroughbred">Thoroughbred</option>
+                            <option value="standardbred">Standardbred</option>
+                            <option value="arabian">Arabian</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="filter-wager">Wager Type</label>
+                        <select id="filter-wager" name="wager">
+                            <option value="all">All Wagers</option>
+                            <option value="win">Win/Place/Show</option>
+                            <option value="exacta">Exacta</option>
+                            <option value="trifecta">Trifecta</option>
+                        </select>
+                    </div>
+                </form>
+
+                <div class="calendar-results" aria-live="polite">
+                    <div class="race-item race-header" aria-hidden="true">
+                        <div>Date & Race</div>
+                        <div>Track</div>
+                        <div>Breed</div>
+                        <div>Purse</div>
+                        <div></div>
+                    </div>
+                    <!-- Sample Race Item -->
+                    <div class="race-item">
+                        <div><strong>Aug 16, 2025 - Race 5</strong></div>
+                        <div>Colonial Downs</div>
+                        <div>Thoroughbred</div>
+                        <div>$150,000</div>
+                        <div><a href="#" class="btn-details">Details</a></div>
+                    </div>
+                    <div class="race-item">
+                        <div><strong>Aug 16, 2025 - Race 6</strong></div>
+                        <div>Colonial Downs</div>
+                        <div>Thoroughbred</div>
+                        <div>$75,000</div>
+                        <div><a href="#" class="btn-details">Details</a></div>
+                    </div>
+                    <div class="race-item">
+                        <div><strong>Aug 17, 2025 - Race 3</strong></div>
+                        <div>Shenandoah Downs</div>
+                        <div>Standardbred</div>
+                        <div>$50,000</div>
+                        <div><a href="#" class="btn-details">Details</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="results" aria-labelledby="results-heading" style="background-color: #f9f9f9;">
+            <div class="container">
+                <h2 id="results-heading">Results & Statistics</h2>
+                <div class="results-grid">
+                    <div class="live-feed">
+                        <h3>Live Race Results</h3>
+                        <div class="result-item">
+                            <div class="track-race">Colonial Downs - Race 4</div>
+                            <div class="finishers">
+                                <span><strong>1st:</strong> #5 Bold Endeavor</span>
+                                <span><strong>2nd:</strong> #2 Virginia Gold</span>
+                                <span><strong>3rd:</strong> #8 River City</span>
+                            </div>
+                        </div>
+                        <div class="result-item">
+                            <div class="track-race">Colonial Downs - Race 3</div>
+                            <div class="finishers">
+                                <span><strong>1st:</strong> #1 Secretariat's Son</span>
+                                <span><strong>2nd:</strong> #7 New Kent Pride</span>
+                                <span><strong>3rd:</strong> #3 Tidewater Tom</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="historical-data">
+                        <h3>Historical Data</h3>
+                        <p>Explore past race results, statistics, and performance data for horses, jockeys, and trainers across Virginia.</p>
+                        <a href="#" class="btn-primary">Explore Archives</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tracks" aria-labelledby="tracks-heading">
+            <div class="container">
+                <h2 id="tracks-heading">Tracks & Venues</h2>
+                <div class="tracks-grid">
+                    <div class="track-card">
+                        <img src="https://placehold.co/600x400/002D9C/FFFFFF?text=Colonial+Downs" alt="Aerial view of Colonial Downs racetrack">
+                        <div class="track-content">
+                            <h4>Colonial Downs</h4>
+                            <ul class="track-info">
+                                <li><i class="fa-solid fa-map-pin" aria-hidden="true"></i> New Kent, VA</li>
+                                <li><i class="fa-solid fa-horse" aria-hidden="true"></i> Thoroughbred Racing</li>
+                                <li><i class="fa-solid fa-wheelchair-move" aria-hidden="true"></i> Fully Accessible</li>
+                            </ul>
+                            <a href="#">Learn More &raquo;</a>
+                        </div>
+                    </div>
+                    <div class="track-card">
+                        <img src="https://placehold.co/600x400/3CB371/FFFFFF?text=Shenandoah+Downs" alt="View of the grandstand at Shenandoah Downs">
+                        <div class="track-content">
+                            <h4>Shenandoah Downs</h4>
+                            <ul class="track-info">
+                                <li><i class="fa-solid fa-map-pin" aria-hidden="true"></i> Woodstock, VA</li>
+                                <li><i class="fa-solid fa-horse-head" aria-hidden="true"></i> Standardbred Racing</li>
+                                <li><i class="fa-solid fa-wheelchair-move" aria-hidden="true"></i> Fully Accessible</li>
+                            </ul>
+                            <a href="#">Learn More &raquo;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="stories" aria-labelledby="stories-heading" style="background-color: #f9f9f9;">
+            <div class="container">
+                <h2 id="stories-heading">Feature Stories</h2>
+                <div class="stories-grid">
+                    <article class="story-card">
+                        <a href="#">
+                            <img src="https://placehold.co/600x800/333333/FFFFFF?text=Jockey" alt="Close-up of a jockey smiling">
+                            <div class="story-content">
+                                <span class="category">Jockey Profile</span>
+                                <h4>The Rise of a Hometown Hero</h4>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="story-card">
+                        <a href="#">
+                            <img src="https://placehold.co/600x800/555555/FFFFFF?text=Horse" alt="A thoroughbred horse in a green pasture">
+                            <div class="story-content">
+                                <span class="category">Equine Excellence</span>
+                                <h4>From Virginia Soil to the Winner's Circle</h4>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="story-card">
+                        <a href="#">
+                            <img src="https://placehold.co/600x800/444444/FFFFFF?text=Breeder" alt="A breeder with a foal in a barn">
+                            <div class="story-content">
+                                <span class="category">Breeder Spotlight</span>
+                                <h4>A Legacy of Champions</h4>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>Virginia Racing Commission</h4>
+                    <p style="color: #555;">10700 Horsemens Road<br>
+                    New Kent, VA 23124<br>
+                    Phone: <a href="tel:8049667400">(804) 966-7400</a></p>
+                </div>
+                <nav aria-label="Footer Quick Links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="RacingAndEvents.html">Racing and Events</a></li>
+                        <li><a href="Licensing.html">Licensing & Permits</a></li>
+                        <li><a href="Regulations.html">Regulations & Compliance</a></li>
+                        <li><a href="Contact.html">Contact & Feedback</a></li>
+                        <li><a href="WebPolicy.html">Web Policy</a></li>
+                    </ul>
+                </nav>
+                <nav aria-label="Footer About Links">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="AboutUs.html">Our Mission & Vision</a></li>
+                        <li><a href="AboutUs.html#governance">Commissioners</a></li>
+                        <li><a href="Publicmeetings.html">Public Meetings & Transparency</a></li>
+                        <li><a href="Careers.html">Careers</a></li>
+                        <li><a href="FOIA.html">Freedom of Information Act</a></li>
+                    </ul>
+                </nav>
+                <nav aria-label="Footer Social Media Links">
+                    <h4>Connect</h4>
+                     <ul>
+                        <li><a href="https://www.facebook.com/share/1QkhtVkcYq/?mibextid=wwXIfr">Facebook</a></li>
+                        <li><a href="https://www.linkedin.com/company/virginia-racing-commission">LinkedIn</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Commonwealth of Virginia | Virginia Racing Commission. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="vrc.js"></script>
+
+</body>
+</html>
