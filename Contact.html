@@ -111,7 +111,7 @@
                 <div class="contact-grid">
                     <div class="form-column">
                         <h2 id="inquiry-heading" style="text-align: left;">General Inquiry</h2>
-                        <form action="#" method="POST">
+                        <form action="#" method="POST" id="emailForm">
                             <div class="form-group">
                                 <label for="name">Full Name</label>
                                 <input type="text" id="name" name="name" required>
@@ -221,6 +221,22 @@
         </div>
     </footer>
     
+    <script>
+        document.getElementById('emailForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Stop the standard form submission
+
+        const name = document.getElementById('name').value;
+        const message = document.getElementById('message').value;
+        const subject = document.getElementById('subject').value;
+
+        // const subject = encodeURIComponent('New Form Submission from ' + name);
+        const body = encodeURIComponent('Name: ' + name + '\n\nMessage:\n\n' + message);
+
+        // The mailto: action that opens the user's email client
+        window.location.href = `mailto:operations@vrc.virginia.gov?subject=${subject}&body=${body}`;
+  });
+
+    </script>
     
     <script src="vrc.js"></script>
 
