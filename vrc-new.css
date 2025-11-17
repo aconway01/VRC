@@ -467,7 +467,7 @@ body.high-contrast .logo, body.high-contrast .accessibility-tools button {
 .meeting-date .month { font-size: 1rem; text-transform: uppercase; font-weight: 700; }
 .meeting-date .day { font-size: 3rem; font-weight: 800; color: var(--vrc-blue); line-height: 1; }
 .meeting-details h3 { font-size: 1.75rem; margin-bottom: 1rem; }
-.meeting-meta { list-style: none; }
+.meeting-meta { list-style: none; text-align: left;}
 .meeting-meta li { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; }
 .meeting-meta i { color: var(--vrc-green); }
 .btn-primary { background-color: var(--vrc-blue); color: var(--white); padding: 0.75rem 1.5rem; border-radius: 8px; font-weight: 700; font-family: var(--font-heading); display: inline-block; }
