@@ -476,11 +476,11 @@ body.high-contrast .logo, body.high-contrast .accessibility-tools button {
 /* Meeting Minutes & Recordings */
 .archive-controls { display: flex; gap: 1rem; justify-content: center; margin-bottom: 3rem; }
 .archive-controls select, .archive-controls input { padding: 0.75rem; border: 1px solid #ddd; border-radius: 6px; font-size: 1rem; }
-.archive-list { max-width: 900px; margin: 0 auto; }
-.archive-item { display: flex; align-items: center; gap: 1.5rem; padding: 1.5rem; border: 1px solid #e0e0e0; border-radius: 8px; margin-bottom: 1rem; }
-.archive-item i { font-size: 2rem; color: var(--vrc-blue); }
-.archive-info strong { font-size: 1.25rem; }
-.archive-links { margin-left: auto; display: flex; gap: 1rem; }
+.archive-list { max-width: 550px; margin: 0 auto; }
+.archive-item { display: flex; align-items: center; gap: 1.25rem; padding: 1.25rem; border: 1px solid #e0e0e0; border-radius: 8px; margin-bottom: 1rem; }
+.archive-item i { font-size: 1rem; color: var(--vrc-blue); }
+.archive-info strong { font-size: 1rem; }
+.archive-links { margin-left: auto; display: flex; gap: 0.5rem; }
 .archive-links a { font-weight: 700; }
 
 /* Budget & Financials */
